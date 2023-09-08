@@ -169,9 +169,9 @@ class PostController extends Controller
 
     private function notif_telegram($post)
     {
-        $token_api = "6633616474:AAGHa8k7Q_uSWfZ8W7phQTZF5THg4O7rQOk";
+        $token_api = "";
         $url = "https://api.telegram.org/bot{$token_api}/sendMessage";
-        $chat_id = -957342051;
+        $chat_id = null;
         $pesan = "Halo ada post baru nih.. Judul : <strong>\"{$post->title}\"</strong>";
         $data = [
             'chat_id' => $chat_id,
